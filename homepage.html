@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Homepage</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Edu QLD Beginner">
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <style>
+      img {
+        border: 8px solid black;
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      p {
+        text-align: center;
+      }
+
+      div {
+        text-align: center;
+      }
+
+      .myParagraph {
+        margin: auto;
+        border: 3px outset black;
+        width: 800px;
+        height: 180px;
+        background-color: #B3B6B7;
+        text-align: center;
+      }
+
+      .myParagraph2 {
+        margin: auto;
+        border: 3px outset black;
+        width: 800px;
+        height: auto;
+        background-color: #B3B6B7;
+        text-align: center;
+      }
+
+      body {
+        background-image: url('whitegray.jpg');
+        text-align: center;
+      }
+
+      .card {
+        text-align: center;
+        margin: auto;
+      }
+
+      body::-webkit-scrollbar {
+        width: 1em;
+      }
+
+      body::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+      }
+
+      body::-webkit-scrollbar-thumb {
+        background-color: darkgrey;
+        outline: 1px solid slategrey;
+      }
+    </style>
+  </head>
+  <body>
+   <div class="container-fluid">
+    <ul class="nav justify-content-center">
+      <li class="nav-item">
+        <a class="nav-link" href="homepage.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contactpage.html">Contact</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="aboutmepage.html">About Me</a>
+      </li>
+    </ul>
+    <link href="contact-form.css" rel="stylesheet">
+    <h1 style="font-size:50px;">
+      <h1 class="animate__animated animate__zoomInDown">
+        <font face="Sofia">
+          <u>Home Page</u>
+        </font>
+      </h1>
+      <br>
+      <div class="myParagraph">
+        <p style="font-size:20px">
+          <font face="Edu QLD Beginner">Hello and thanks for visiting my webpage. To introduce myself to those who don't know much about me, my name is Kyle a student from Kean University and creator of this webpage. I now have a method to advertise myself. Cybersecurity is my area of study in Information Technology. I've had an interest in technology ever since I was a kid. So I participated in forms of activites that involved it. Technology is a terrific opportunity for me to show my creativity and desire to learn.</font>
+          <br>
+          <br>
+          <br>
+          <br>
+          <img src="Me blur background - Copy.png" alt="Picture of me" width="350" height="400">
+          <br>
+          <br>
+        </p>
+        <div class="myParagraph2">
+          <p style="font-size:20px">
+            <font face="Edu QLD Beginner">By setting a good example for my profession, I believe that I will encourage people to pursue their passions. My favorite approach is to study, use what I've learned, and then gain new talents. By putting in a lot of effort and working hard, I hope to graduate with my B.S in Information Technology by Dec 2023. In the future, I want to own a tech business that operates on a worldwide scale. A wonderful method to develop self-confidence is to stay motivated and believe in oneself.</font>
+          </p>
+        </div>
+        <br>
+        <br>
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="cybersecurity.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Cyber Security & IT Professional</h5>
+            <p class="card-text">The defense of computer systems and networks against data leaks, theft, or damage to their hardware, software, or electronic data, as well as against the interruption or diversion of the services they offer.</p>
+            <a href="aboutmepage.html" class="btn btn-primary">More about me</a>
+          </div>
+        </div>
+        
+        <br>
+        <br>
+        <script>
+          function display_ct7() {
+            var x = new Date()
+            var ampm = x.getHours() >= 12 ? ' PM' : ' AM';
+            hours = x.getHours() % 12;
+            hours = hours ? hours : 12;
+            hours = hours.toString().length == 1 ? 0 + hours.toString() : hours;
+            var minutes = x.getMinutes().toString()
+            minutes = minutes.length == 1 ? 0 + minutes : minutes;
+            var seconds = x.getSeconds().toString()
+            seconds = seconds.length == 1 ? 0 + seconds : seconds;
+            var month = (x.getMonth() + 1).toString();
+            month = month.length == 1 ? 0 + month : month;
+            var dt = x.getDate().toString();
+            dt = dt.length == 1 ? 0 + dt : dt;
+            var x1 = month + "/" + dt + "/" + x.getFullYear();
+            x1 = x1 + " - " + hours + ":" + minutes + ":" + seconds + " " + ampm;
+            document.getElementById('ct7').innerHTML = x1;
+            display_c7();
+          }
+
+          function display_c7() {
+            var refresh = 1000; // Refresh rate in milli seconds
+            mytime = setTimeout('display_ct7()', refresh)
+          }
+          display_c7()
+        </script>
+        <span id='ct7' style="font-size:30px">"background-color: lightblue"&gt;</span>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+      </div>
+  </body>
+</html>
